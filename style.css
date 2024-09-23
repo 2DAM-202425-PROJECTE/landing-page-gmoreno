@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pixelify-sans-custom {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Puedes cambiar a 700 si deseas un grosor mayor */
+    font-style: normal;
+}
+
+.light-green-custom-font {
+    background-color: #04ec64;
+    color: #04ec64;
+}
