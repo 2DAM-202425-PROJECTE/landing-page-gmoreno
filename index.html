@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gerard Moreno Campos</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuente Pixelify Sans -->
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-300 text-gray-200">
 
@@ -98,11 +99,33 @@
   </form>
 </section>
 
+<button id="scrollToTop" class="fixed bottom-5 right-5 hidden pixel-button">
+  <img src="src/assets/svg/up-arrow-svgrepo-com.svg" alt="Volver al inicio" class="w-10 h-10">
+</button>
+
 <footer class="bg-black bg-opacity-50 text-white py-4 text-center">
   <p>&copy; 2024 Gerard Moreno Campos</p>
 </footer>
 
 <script>
+  const scrollToTopButton = document.getElementById('scrollToTop');
+
+  // Mostrar/ocultar el botón al hacer scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // Muestra el botón después de 300px de desplazamiento
+      scrollToTopButton.classList.remove('hidden');
+    } else {
+      scrollToTopButton.classList.add('hidden');
+    }
+  });
+
+  // Función para desplazarse al tope de la página con un efecto suave
+  scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
   function handleClick() {
     alert('¡Botón presionado!');
   }

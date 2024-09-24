@@ -13,3 +13,57 @@
     background-color: #04ec64;
     color: #04ec64;
 }
+
+.pixel-button {
+    font-size: 25px;
+    height: auto;
+    margin: 10px;
+    font-family: 'VT323';
+
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pixel-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    background: #04ec64;
+    z-index: -1;
+}
+
+.pixel-button:active {
+    /* Hacer que el botón se mueva ligeramente hacia abajo al hacer clic */
+    transform: translateY(4px);
+}
+
+.pixel-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: -6px;
+    right: -6px;
+    background: #04ec64;
+    z-index: -1;
+}
+
+.pixel-button {
+    padding: 10px 10px;
+    position: relative;
+    background: #04ec64;
+    width: auto;
+    z-index: 2;
+}
