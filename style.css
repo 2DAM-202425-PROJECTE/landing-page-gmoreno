@@ -1,5 +1,3 @@
-/* style.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,11 +10,11 @@
 }
 
 .bg-custom-green {
-    background-color: #04ec64;
+    background-color: #3B5323;
 }
 
 .font-custom-green {
-    color: #04ec64;
+    color: #3B5323;
 }
 
 .pixel-button {
@@ -56,7 +54,7 @@
     transform: translateY(4px);
 }
 
-.pixel-button:after {
+.pixel-button::after {
     content: "";
     display: block;
     position: absolute;
@@ -68,9 +66,40 @@
     z-index: -1;
 }
 
-.parallax-cube {
+.pixel-box {
     position: relative;
-    width: 100px; /* Ancho del cubo */
-    height: 100px; /* Altura del cubo */
-    transition: transform 0.5s ease; /* Transición suave al mover */
+    display: block;
+    margin: 10px;
+    font-family: 'VT323';
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    padding: 10px 10px;
+    background: #3B5323;
+    width: auto;
+    z-index: 2;
+}
+
+.pixel-box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    background: #3B5323;
+    z-index: -1;
+}
+
+.pixel-box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: -6px;
+    right: -6px;
+    background: #3B5323;
+    z-index: -1;
 }
