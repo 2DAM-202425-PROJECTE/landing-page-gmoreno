@@ -13,7 +13,7 @@
 </head>
 <body class="bg-gray-300 text-gray-200">
 
-<nav class="light-green-custom text-white py-4 rounded">
+<nav class="bg-black text-white py-4">
   <div class="container mx-auto flex justify-between items-center">
     <div class="text-lg font-bold">Mi Portfolio</div>
     <ul class="flex space-x-6">
@@ -32,33 +32,13 @@
       <p class="text-5xl font-bold md:text-8xl text-white pixelify-sans-custom">Soy
         <span class="text-orange-600"> Gerard Moreno</span>.
       </p>
-      <p class="text-4xl md:text-6xl text-white pixelify-sans-custom">Experiencia de <span id="dynamic-text"></span></p>
+      <p class="text-4xl md:text-6xl text-white pixelify-sans-custom">Tengo experiencia de <span id="dynamic-text"></span></p>
       <p class="mt-2 lg:text-4xl md:text-xl sm:text-lg text-white pixelify-sans-custom">ASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDAS</p>
     </div>
   </div>
 </section>
 
-<section class="relative overflow-hidden h-screen bg-black">
-  <div class="parallax-cube-container flex items-end justify-between w-full h-full">
-    <div class="parallax-cube bg-green-500"></div>
-    <div class="parallax-cube bg-yellow-500"></div>
-    <div class="parallax-cube bg-green-500"></div>
-    <div class="parallax-cube bg-yellow-500"></div>
-    <div class="parallax-cube bg-green-500"></div>
-    <div class="parallax-cube bg-yellow-500"></div>
-    <div class="parallax-cube bg-green-500"></div>
-    <div class="parallax-cube bg-yellow-500"></div>
-    <div class="parallax-cube bg-green-500"></div>
-    <div class="parallax-cube bg-yellow-500"></div>
-    <div class="parallax-cube bg-green-500"></div>
-    <div class="parallax-cube bg-yellow-500"></div>
-    <div class="parallax-cube bg-green-500"></div>
-    <div class="parallax-cube bg-yellow-500"></div>
-  </div>
-</section>
-
-
-<section id="about" class="py-10 px-4">
+<section class="py-10 px-4 bg-custom-green">
   <h2 class="text-3xl text-center mb-4">Sobre mí</h2>
   <p class="text-center max-w-2xl mx-auto">Soy un programador con experiencia en el desarrollo de aplicaciones web modernas. Me apasiona crear soluciones eficientes y elegantes utilizando tecnologías de vanguardia.</p>
 </section>
@@ -112,57 +92,6 @@
   <p>&copy; 2024 Gerard Moreno Campos</p>
 </footer>
 
-<script>
-  const scrollToTopButton = document.getElementById('scrollToTop');
-
-  // Mostrar/ocultar el botón al hacer scroll
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) { // Muestra el botón después de 300px de desplazamiento
-      scrollToTopButton.classList.remove('hidden');
-    } else {
-      scrollToTopButton.classList.add('hidden');
-    }
-  });
-
-  // Función para desplazarse al tope de la página con un efecto suave
-  scrollToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-  function handleClick() {
-    alert('¡Botón presionado!');
-  }
-
-  const words = ['Full Stack Dev.', 'Software Dev.', 'Web Designer.', 'Programmer.'];
-  let index = 0;
-  const dynamicText = document.getElementById('dynamic-text');
-
-  function typeWriter() {
-    if (index < words.length) {
-      dynamicText.textContent = words[index];
-      index++;
-    } else {
-      index = 0;
-    }
-    setTimeout(typeWriter, 2000);
-  }
-
-  typeWriter();
-
-  window.addEventListener('scroll', function() {
-    const scrollY = window.scrollY;
-
-    document.querySelectorAll('.parallax-cube').forEach((cube, index) => {
-      const speed = 0.5 + index * 0.15; // Ajusta la velocidad de cada cubo
-      const yPosition = scrollY * speed;
-
-      cube.style.transform = `translateY(-${yPosition}px)`; // Mueve el cubo hacia arriba
-    });
-  });
-
-</script>
-
+<script src="main.js"></script>
 </body>
 </html>
