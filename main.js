@@ -19,8 +19,6 @@ scrollToTopButton.addEventListener('click', () => {
   });
 });
 
-const scrollNavButtons = document.getElementById('scrollNav')
-
 const scrollNavButtons = document.querySelectorAll('.scroll-nav');
 
 // Agregar el evento de clic a cada enlace
