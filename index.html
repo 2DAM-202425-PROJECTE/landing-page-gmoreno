@@ -10,13 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-black text-gray-200">
+<body class="bg-black text-gray-200 font-['Pixelify Sans', sans-serif]">
 
 <nav class="bg-transparent   text-white py-4">
   <div class="container mx-auto flex justify-between items-center">
     <div class="text-lg font-bold">Mi Portfolio</div>
     <ul class="flex space-x-6">
-      <li><a href="#about" class="hover:underline">Sobre mí</a></li>
+      <li><a href="#about" id="scroll-nav" class="hover:underline">Sobre mí</a></li>
       <li><a href="#skills" class="hover:underline">Habilidades</a></li>
       <li><a href="#projects" class="hover:underline">Proyectos</a></li>
       <li><a href="#contact" class="hover:underline">Contacto</a></li>
@@ -27,12 +27,12 @@
 <section class="px-10 pt-32 pb-20 bg-transparent">
   <div class="items-center justify-items-center gap-10">
     <div class="flex flex-col justify-center lg:items-start text-center sm:text-left">
-      <p class="mt-2 text-4xl md:text-2xl sm:text-xl text-white pixelify-sans-custom">Hola!</p>
-      <p class="text-5xl font-bold md:text-8xl text-white pixelify-sans-custom">Soy
+      <p class="mt-2 text-4xl md:text-2xl sm:text-xl pixelify-sans-custom">Hola!</p>
+      <p class="text-5xl font-bold md:text-8xl pixelify-sans-custom">Soy
         <span>Gerard Moreno</span>.
       </p>
-      <p class="text-4xl md:text-6xl text-white pixelify-sans-custom">Tengo experiencia de <span id="dynamic-text"></span></p>
-      <p class="mt-2 lg:text-4xl md:text-xl sm:text-lg text-white pixelify-sans-custom">ASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDAS</p>
+      <p class="text-4xl md:text-6xl pixelify-sans-custom">Tengo experiencia de <span id="dynamic-text"></span></p>
+      <p class="mt-2 lg:text-4xl md:text-xl sm:text-lg pixelify-sans-custom">ASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDAS</p>
     </div>
   </div>
 </section>
@@ -90,7 +90,7 @@
 </section>
 
 
-<button id="scrollToTop" class="fixed bottom-5 right-5 hidden pixel-button">
+<button id="scrollToTop" class="fixed bottom-5 right-5 hidden pixel-button cursor-pointer border-2 border-solid border-[#00FF00] p-[10px] bg-[#00FF00]">
   <img src="src/assets/svg/pixelated-up-arrow-black.svg" alt="Volver al inicio" class="w-10 h-10">
 </button>
 

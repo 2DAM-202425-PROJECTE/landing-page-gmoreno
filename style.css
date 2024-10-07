@@ -2,29 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fuente retro */
-body {
-    font-family: 'Pixelify Sans', sans-serif;
-}
-
 /* Estilo pixelado para los botones */
 .pixel-button {
-    background-color: #00FF00;
-    border: 2px solid #00FF00;
-    color: black;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px #00FF00;
-    text-transform: uppercase;
+    box-shadow: 0 0 10px #00FF00;
     transition: all 0.3s ease; /* Transición suave para todos los cambios */
 }
 
 .pixel-button:hover {
-    color: #00FF00;
     transform: translateY(-4px); /* Subir ligeramente el botón */
-    box-shadow: 0px 0px 20px #00FF00; /* Sombra más intensa */
+    box-shadow: 0 0 20px #00FF00; /* Sombra más intensa */
 }
 
 /* Efecto en el menú de navegación */

@@ -19,6 +19,27 @@ scrollToTopButton.addEventListener('click', () => {
   });
 });
 
+const scrollNavButtons = document.getElementById('scrollNav')
+
+const scrollNavButtons = document.querySelectorAll('.scroll-nav');
+
+// Agregar el evento de clic a cada enlace
+scrollNavButtons.forEach(button => {
+  button.addEventListener('click', (event) => {
+    // Prevenir el comportamiento predeterminado del enlace
+    event.preventDefault();
+
+    // Obtener el destino del enlace
+    const targetId = button.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    // Hacer scroll suave al elemento objetivo
+    targetElement.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
 function handleClick() {
   alert('¡Botón presionado!');
 }
