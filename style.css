@@ -2,155 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-.pixelify-sans-custom {
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400; /* Puedes cambiar a 700 si deseas un grosor mayor */
-    font-style: normal;
+/* Fuente retro */
+body {
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
-.bg-custom-green {
-    background-color: #3B5323;
-}
-
-.font-custom-green {
-    color: #3B5323;
-}
-
+/* Estilo pixelado para los botones */
 .pixel-button {
-    font-size: 25px;
-    height: auto;
-    margin: 10px;
-    font-family: 'VT323';
+    background-color: #00FF00;
+    border: 2px solid #00FF00;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-    transition: transform 0.1s ease-in-out;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    padding: 10px 10px;
-    position: relative;
-    background: #04ec64;
-    width: auto;
-    z-index: 2;
+    box-shadow: 0px 0px 10px #00FF00;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
 }
 
-.pixel-button::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: -10px;
-    right: -10px;
-    background: #04ec64;
-    z-index: -1;
+.pixel-button:hover {
+    color: #00FF00;
+    transform: translateY(-4px); /* Subir ligeramente el botón */
+    box-shadow: 0px 0px 20px #00FF00; /* Sombra más intensa */
 }
 
-.pixel-button:active {
-    /* Hacer que el botón se mueva ligeramente hacia abajo al hacer clic */
-    transform: translateY(4px);
+/* Efecto en el menú de navegación */
+nav ul li a {
+    font-family: 'Pixelify Sans', sans-serif;
+    padding: 10px 20px;
+    border: 2px solid #00FF00;
+    background-color: black;
+    color: #00FF00;
+    text-shadow: 0px 0px 5px #00FF00;
+    transition: all 0.3s ease-in-out;
 }
 
-.pixel-button::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 4px;
-    bottom: 4px;
-    left: -6px;
-    right: -6px;
-    background: #04ec64;
-    z-index: -1;
+nav ul li a:hover {
+    background-color: #00FF00;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Estilo de secciones */
+.pixelify-sans-custom {
+    font-family: 'Pixelify Sans', sans-serif;
+    text-shadow: 0px 0px 5px #00FF00;
+}
+
+.section-title {
+    font-size: 50px;
+    color: #00FF00;
+    text-align: center;
+    text-shadow: 0px 0px 10px #00FF00;
+    margin-bottom: 20px;
 }
 
 .pixel-box {
-    position: relative;
-    display: block;
-    margin: 10px;
-    text-transform: uppercase;
-    font-size: 25px;
-    color: white;
-    padding: 10px 10px;
-    background: #3B5323;
-    width: auto;
-    z-index: 2;
-}
-
-.pixel-box::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: -10px;
-    right: -10px;
-    background: #3B5323;
-    z-index: -1;
-}
-
-.pixel-box::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 4px;
-    bottom: 4px;
-    left: -6px;
-    right: -6px;
-    background: #3B5323;
-    z-index: -1;
+    background-color: black;
+    border: 4px solid #00FF00;
+    padding: 20px;
 }
 
 .pixel-test {
-    position: relative;
-    display: block;
-    margin: 10px;
+    font-size: 16px;
     text-transform: uppercase;
-    font-size: 25px;
-    color: black;
-    padding: 10px 10px;
-    background: blue;
-    z-index: 2;
-    border-top: 4px solid #04ec64;
-    border-bottom: 4px solid #04ec64;
+    letter-spacing: 2px;
 }
 
-.pixel-test::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: -10px;
-    right: -10px;
-    background: #3B5323;
-    z-index: -1;
-    border-left: 4px solid #04ec64;
-    border-right: 4px solid #04ec64;
+/* Cuadro de habilidades/proyectos */
+.pixel-box {
+    border: 2px solid #00FF00;
+    background-color: black;
+    color: #00FF00;
+    box-shadow: 0px 0px 10px #00FF00;
+    padding: 20px;
+    margin: 10px 0;
 }
 
-.pixel-test::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -6px;
-    right: -6px;
-    z-index: -1;
-    --borderWidth: 6px;
-    background-repeat: no-repeat;
-    background-origin: padding-box, border-box, border-box, border-box, border-box;
-    background-image: linear-gradient(0deg, transparent 0%, transparent 100%),
-    linear-gradient(0deg, red 0%, red 100%),
-    linear-gradient(90deg, red 0%, red 100%),
-    linear-gradient(180deg, red 0%, red 100%),
-    linear-gradient(270deg, red 0%, red 100%);
-    border-width: var(--borderWidth);
-    border-style: solid;
-    border-color: transparent;
-    background-size: cover, var(--borderWidth) var(--borderWidth), var(--borderWidth) var(--borderWidth), var(--borderWidth) var(--borderWidth), var(--borderWidth) var(--borderWidth);
-    background-position: center,top left, top right, bottom right, bottom left;
+/* Footer */
+footer {
+    border-top: 2px solid #00FF00;
+    text-shadow: 0px 0px 5px #00FF00;
 }
+
+footer a {
+    color: #00FF00;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
