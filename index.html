@@ -10,16 +10,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-black text-gray-200 font-['Pixelify Sans', sans-serif]">
+<body class="bg-black text-gray-200">
 
 <nav class="py-4 bg-white fixed top-0 left-0 w-full shadow-md z-50">
   <div class="container mx-auto flex justify-between items-center">
     <div class="text-lg font-bold">Gerard Moreno Campos</div>
     <ul class="flex space-x-6">
-      <li><a href="#about" class="scroll-nav hover:underline">Sobre mí</a></li>
-      <li><a href="#skills" class="scroll-nav hover:underline">Habilidades</a></li>
-      <li><a href="#projects" class="scroll-nav hover:underline">Proyectos</a></li>
-      <li><a href="#contact" class="scroll-nav hover:underline">Contacto</a></li>
+      <li><a href="#about" class="hover:underline">Sobre mí</a></li>
+      <li><a href="#skills" class=" hover:underline">Habilidades</a></li>
+      <li><a href="#projects" class="hover:underline">Proyectos</a></li>
+      <li><a href="#contact" class="hover:underline">Contacto</a></li>
     </ul>
   </div>
 </nav>
@@ -27,25 +27,25 @@
 <section class="px-10 pt-32 pb-20 bg-transparent">
   <div class="items-center justify-items-center gap-10">
     <div class="flex flex-col justify-center lg:items-start text-center sm:text-left">
-      <p class="mt-2 text-4xl md:text-2xl sm:text-xl pixelify-sans-custom">Hola!</p>
-      <p class="text-5xl font-bold md:text-8xl pixelify-sans-custom">Soy
+      <p class="mt-2 text-4xl md:text-2xl sm:text-xl pixelify-sans">Hola!</p>
+      <p class="text-5xl font-bold md:text-8xl pixelify-sans">Soy
         <span>Gerard Moreno</span>.
       </p>
-      <p class="text-4xl md:text-6xl pixelify-sans-custom">Tengo experiencia de <span id="dynamic-text"></span></p>
-      <p class="mt-2 lg:text-4xl md:text-xl sm:text-lg pixelify-sans-custom">ASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDAS</p>
+      <p class="text-4xl md:text-6xl pixelify-sans">Tengo experiencia de <span id="dynamic-text"></span></p>
+      <p class="mt-2 lg:text-4xl md:text-xl sm:text-lg pixelify-sans">ASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDASDAS</p>
     </div>
   </div>
 </section>
 
-<section class="py-10 px-4 bg-black">
-  <div class="container pixel-box mx-auto text-center">
+<section id="about" class="py-10 px-4 bg-black">
+  <div class="container pixel-box mx-auto text-center rounded">
     <h2 class="text-3xl text-center mb-4">Sobre mí</h2>
     <p class="text-center max-w-2xl mx-auto">Soy un programador con experiencia en el desarrollo de aplicaciones web modernas. Me apasiona crear soluciones eficientes y elegantes utilizando tecnologías de vanguardia.</p>
   </div>
 </section>
 
 <section id="skills" class="py-10 px-4 bg-black">
-  <div class="max-w-lg mx-auto p-6 rounded-lg shadow-lg pixel-box">
+  <div class="max-w-lg mx-auto p-6 rounded pixel-box">
     <h2 class="text-3xl text-center mb-4 text-white">Habilidades</h2>
     <ul class="list-disc list-inside text-gray-300">
       <li>JavaScript</li>
@@ -59,14 +59,14 @@
 </section>
 
 <section id="projects" class="py-10 px-4 bg-black">
-  <div class="max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-lg space-y-4">
+  <div class="max-w-lg mx-auto p-6 rounded pixel-box space-y-4">
     <h2 class="text-3xl text-center mb-4 text-white">Proyectos</h2>
-    <div class="bg-gray-700 p-4 rounded">
+    <div class="p-4 rounded pixel-box">
       <h3 class="text-xl text-white">Proyecto 1</h3>
       <p class="text-gray-300">Descripción breve del proyecto 1.</p>
       <a href="#" class="text-blue-400 hover:underline">Ver más</a>
     </div>
-    <div class="bg-gray-700 p-4 rounded">
+    <div class="p-4 rounded pixel-box">
       <h3 class="text-xl text-white">Proyecto 2</h3>
       <p class="text-gray-300">Descripción breve del proyecto 2.</p>
       <a href="#" class="text-blue-400 hover:underline">Ver más</a>
@@ -75,9 +75,9 @@
 </section>
 
 <section id="contact" class="py-10 px-4 bg-black">
-  <div class="max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+  <div class="max-w-lg mx-auto p-6 rounded pixel-box">
     <h2 class="text-3xl text-center mb-4 text-white">Contacto</h2>
-    <form id="contactForm" class="bg-gray-900 p-4 rounded">
+    <form id="contactForm" class="p-4 rounded pixel-box">
       <label for="name" class="block text-gray-300 mb-2">Nombre:</label>
       <input type="text" id="name" class="w-full p-2 border border-gray-600 rounded mb-4" required>
       <label for="email" class="block text-gray-300 mb-2">Email:</label>
@@ -99,9 +99,9 @@
     <p class="mb-4">&copy; 2024 Gerard Moreno Campos</p>
     <div class="flex justify-center space-x-4 mb-4">
       <a href="https://linkedin.com" target="_blank" class="hover:text-blue-600">
-        <img src="src/assets/svg/linkedin.svg" alt="LinkedIn" class="w-6 h-6">
+        <img src="src/assets/svg/linkedin.svg" a -lt="LinkedIn" class="w-6 h-6">
       </a>
-      <a href="https://github.com" target="_blank" class="hover:text-gray-400">
+      <a href="https://github.com/gerardmoreno123" target="_blank" class="hover:text-gray-400">
         <img src="src/assets/svg/github.svg" alt="GitHub" class="w-6 h-6">
       </a>
     </div>

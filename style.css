@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Estilo pixelado para los botones */
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 30px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+
+/* Estilo personalizado de la letra */
+.pixelify-sans {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
 .pixel-button {
     box-shadow: 0 0 10px #00FF00;
     transition: all 0.3s ease; /* Transición suave para todos los cambios */
@@ -20,7 +32,6 @@ nav ul li a {
     border: 2px solid #00FF00;
     background-color: black;
     color: #00FF00;
-    text-shadow: 0px 0px 5px #00FF00;
     transition: all 0.3s ease-in-out;
 }
 
@@ -28,26 +39,6 @@ nav ul li a:hover {
     background-color: #00FF00;
     color: black;
     border: 2px solid black;
-}
-
-/* Estilo de secciones */
-.pixelify-sans-custom {
-    font-family: 'Pixelify Sans', sans-serif;
-    text-shadow: 0  0 5px #00FF00;
-}
-
-.section-title {
-    font-size: 50px;
-    color: #00FF00;
-    text-align: center;
-    text-shadow: 0px 0px 10px #00FF00;
-    margin-bottom: 20px;
-}
-
-.pixel-test {
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 /* Cuadro de habilidades/proyectos */
@@ -59,9 +50,3 @@ nav ul li a:hover {
     padding: 20px;
     margin: 10px 0;
 }
-
-
-footer a:hover {
-    color: #fff;
-}
-
